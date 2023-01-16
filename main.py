@@ -10,9 +10,7 @@ import csv
 from numpy import double
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+
 
 
 
@@ -309,10 +307,11 @@ def justoldworkloadf7lag2():
     ax1.set_ylabel('Event Arrivals Rate')
 
 
-    plt.title('Workload ')
+    ##plt.title('Workload ')
     ax1.plot(t, replicas, '-g', label='replicas')
     ax1.legend()
     ax2.legend(loc=1)
+    ax2.set_ylabel('Latency (ms)')
     ###################################################
     plt.show()
 
